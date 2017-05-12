@@ -32,12 +32,7 @@
 # Gabhome backup
 0 10,16,22 * * * rsync -avu --delete-after /media/gab/Data/myCloud/Gabhome ~/Dropbox > ~/bkp-gabhome.log
 
-# Home backup
-# 30 */1 * * * rsync -avu --exclude Documents/ --exclude Images/ --exclude Musique/ --exclude Dropbox/ --exclude '.*' --exclude '*.log' --delete-excluded  /home /media/gab/Data/myCloud/Archives/Env > ~/bkp-home.log
-
 # Archives backup
 # FSTAB: //internetbox-nas/Elements      /media/gab/Elements     cifs     credentials=/root/.smbcredentials,iocharset=utf8,rw,gid=100,uid=1000,_netdev   0       0
 45 12,18 * * * /home/gab/bkp-archives
 
-# Modulo web tasks
-#* * * * * php /var/www/html/modulo/cron.php
