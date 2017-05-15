@@ -1,0 +1,11 @@
+#! /bin/bash
+
+ls /media/gab/Elements
+
+if [ $? = 0 ]; then
+	rsync -avu --delete-after /media/gab/Data/myCloud /media/gab/Elements/Gab > ~/bkp-data.log
+else
+	echo "Destination not found"
+fi
+
+
