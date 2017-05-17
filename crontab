@@ -34,5 +34,5 @@
 
 # Archives backup
 # FSTAB: //internetbox-nas/Elements      /media/gab/Elements     cifs     credentials=/root/.smbcredentials,iocharset=utf8,rw,gid=100,uid=1000,_netdev   0       0
-45 12,18 * * * /home/gab/bkp-archives
+45 12,18 * * * /home/gab/bkp-data
 
