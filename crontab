@@ -33,6 +33,5 @@
 0 9,11,13,15,17,19,21,23 * * * rsync -avu --exclude '.*' --delete-excluded /media/gab/Data/myCloud/Gabhome ~/Dropbox > ~/bkp-gabhome.log
 
 # Archives backup
-# FSTAB: //internetbox-nas/Elements      /media/gab/Elements     cifs     credentials=/root/.smbcredentials,iocharset=utf8,rw,gid=100,uid=1000,_netdev   0       0
 30 9,13,17,21 * * * /home/gab/bkp-data
 
