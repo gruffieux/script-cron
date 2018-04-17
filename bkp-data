@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# FSTAB: //internetbox-nas/Elements      /media/gab/Elements     cifs     guest,iocharset=utf8,gid=100,uid=1000,rw,sec=ntlm,vers=1.0     0       0
+# FSTAB: //internetbox-nas/Elements      /media/gab/Elements     cifs     guest,iocharset=utf8,gid=100,uid=1000,_netdev,sec=ntlm,vers=1.0     0       0
 ls /media/gab/Elements
 
 if [ $? = 0 ]; then
